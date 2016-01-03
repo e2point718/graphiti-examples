@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="com.github.e2point718.eclipse.diagramview.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="com.github.e2point718.eclipse.diagramview.Perspective"
+            id="com.github.e2point718.eclipse.diagramview.perspective">
+      </perspective>
+   </extension>
+
+</plugin>
